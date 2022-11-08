@@ -1,38 +1,249 @@
-.App {
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  font-size: 60.5%;
+}
+/* general setting ends */
+
+/* app start */
+.App{
+  display: flex;
+  padding: 2rem 5rem;
+  background-color:gray;
+  height: 95vh;
+}
+/* app end */
+
+
+/* side menu start */
+.sideMenu{
+  width: 18%;
+  border-radius: 1.5rem 0rem 0rem 1.5rem;
+  font-size: 2rem;
+  background: ghostwhite;
+}
+span{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: blue;
+  color: white;
+  font-size: 3rem;
+  padding: 0rem .3rem;
+  box-shadow: 1px 1px 1px black;
+}
+.brandName{
+  background-color: white;
+  font-family: monospace;
+  padding: 1rem 0rem;
+  font-size: 2.5rem;
+  text-align: center;
+  border-radius: 1.5rem 0rem 0rem 0rem;
+}
+.navigationItem{
+  padding: 2rem 3rem;
+}
+.registerBtn{
+  padding: 1rem;
+  background-color: purple;
+  color: white;
+  border-radius: 1rem;
+  text-shadow: 1px 1px 1px black;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+  margin:1rem 3rem;
+  list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigationItem ul li{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* justify-content: space-between; */
+  color: gray;
+  font-family: monospace;
+  padding: 1rem .5rem;
+  font-size: 2rem;
+  /* box-shadow: .1px .1px 1px black; */
+
+}
+.navigationItem ul li p{
+  margin-left: .5rem;
+}
+ul li img{
+  height: 3rem;
+}
+.settingBtn{
+ padding: 1.5rem;
+ display: flex;
+ justify-content: center;
+ box-shadow: .1px .1px .4px black;
+}  
+.settingBtn img{
+  height: 3rem;
+  margin-right: 1rem;
+}
+.getMobileCard{
+  text-align: center;
+  margin-top: .5rem;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 1rem;
+}
+.getMobileCard img{
+  height: 10rem;
+  width: 100%;
+}
+.mobileIcon{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.mobileIcon img{
+  height: 3rem;
+  width:3rem;
+  margin: 1rem .5rem;
+}
+/* side menu end */
+
+
+/* mainBody start */
+.MainBody{
+  width: 82%;
+  background-color: whitesmoke;
+}
+
+/* navigation start */
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: ghostwhite;
+}
+.searchBar input{
+  background-color: ghostwhite;
+  padding: 1.86rem;
+  border: none;
+  margin: auto 0rem;
+}
+.avtar{
+  display: flex;
+  margin: auto 2rem;
+}
+.userName{
+  margin: auto 0rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.7rem;
+  color: blue;
+  padding: 0rem 1rem;
+  display: flex;
+}
+.userName p{
+  margin: auto 0rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.userName img{
+  height: 3rem;
+  width: 3rem;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  background-color: whitesmoke;
+}
+/* navigation end */
+
+.InfoList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+.Card{
+  display: flex;
+  margin: 1rem 2rem;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 2px 2px 1px black;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+}
+.cardImg{
+  margin: auto 0rem;
+}
+.Card img{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px black;
+}
+.MidContainer{
+  display: grid;
+  grid-template-columns:2fr 1fr 1fr;
+}
+.Barchart{
+  box-shadow: 2px 2px 4px black  ;
+  background: white;
+  padding: 1rem;
+  margin: 1rem 0rem 1rem 2rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+.PieChartPatient{
+  box-shadow: 2px 2px 4px black;
+  background-color: white;
+  text-align: center;
+  margin: 1rem 2rem 1rem 0rem;
+  padding: 0rem 1rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  padding-left: 1rem;
+}
+.pieChart{
+  display: flex;
+  justify-content: center;
+}
+.GenderCar{
+  box-shadow: 2px 2px 4px black;
+  background-color: white;
+  text-align: center;
+  margin: 1rem 2rem ;
+  padding: 0rem 1rem;
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+.BottomContainer{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 2rem;
+}
+.LineChartTime{
+  box-shadow: 2px 2px 4px black;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-right: 2rem;
+  background-color: white;
+}
+.PatientByDivision{
+  text-align: center;
+  background-color: white;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  box-shadow: 2px 2px 4px black;
+}
+.PatientByDivision ul{
+  margin: 0;
+}
+.PatientByDivision ul li{
+  font-size: 1.7rem;
+  margin: 0;
+  box-shadow: .1px .1px .5px black;
+  padding: .8rem;
+}
+.headingPatient{
   color: white;
+  text-align: center;
+  padding: 1rem;
+  font-family: cursive;
 }
-
-.App-link {
-  color: #61dafb;
+.PaitentThisMonth{
+  background-color: navy;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 1rem;
+  margin-left: 2.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* mainBody end */
